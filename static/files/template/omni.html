@@ -65,7 +65,13 @@
 
 <!-- SEARCH BUTTONS -->
 <div class="search buttons" ng-show="mode.search && inputs.provider">
- <select class="ui green button ng-valid ng-touched ng-dirty ng-valid-parse" ng-model="inputs.provider" ng-options="id as s.name for (id, s) in providers"><option value="1337x" selected="selected" label="1337X">1337X</option><option value="abb" label="The Audiobook Bay">The Audiobook Bay</option><option value="et" label="ExtraTorrent">ExtraTorrent</option><option value="eztv" label="EZTV">EZTV</option><option value="rbg" label="RARBG">RARBG</option><option value="zq" label="Zooqle">Zooqle</option></select>
+ <select class="ui green button" ng-model="inputs.provider"
+    ng-options="id as s.name for (id, s) in providers"><option value="1337x" selected="selected" label="1337X">1337X</option>
+   <option value="abb" label="The Audiobook Bay">The Audiobook Bay</option>
+   <option value="et" label="ExtraTorrent">ExtraTorrent</option>
+   <option value="eztv" label="EZTV">EZTV</option><option value="rbg" label="RARBG">RARBG</option>
+   <option value="zq" label="Zooqle">Zooqle</option>
+  </select>
   <div ng-click="submitSearch()"
     class="ui tiny blue button"
     ng-class="{loading: searching,
