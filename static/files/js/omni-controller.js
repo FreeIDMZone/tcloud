@@ -22,7 +22,7 @@ app.controller("OmniController", function($scope, $rootScope, storage, api, sear
       return;
     //filter
     for(var id in searchProviders) {
-      if(/\/item$/.test(id)) continue;
+      if(/-item$/.test(id)) continue;
       $scope.providers[id] = searchProviders[id];
     }
     $scope.parse();
