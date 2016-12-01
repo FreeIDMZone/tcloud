@@ -61,7 +61,51 @@
 			<span>© <a href="https://freeidmzone.cf" target="_blank">NKR</a> <font href="https://facebook.com/FreeIDMZone" target="_blank" color="red">❤   </font><a href="https://facebook.com/FreeIDMZone" target="_blank">  India</a> version {{ state.Stats.Version }}	-	</span>
 			<span ng-if="numKeys(state.Users) > 1">{{ numKeys(state.Users) }} users connected	-	</span>
 			<span><a href="https://freeidmzone2.blogspot.com" target="_blank">Powered By NRS Inc.</a> {{ state.Stats.Runtime }}</span></h5>
-		</footer><iframe src="https://www7.cbox.ws/box/?boxid=823709&boxtag=Cz2RoU" width="100%" height="450" allowtransparency="yes" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
+		</footer>
+		<style type="text/css">
+#gb{
+position:fixed;
+top:50px;
+z-index:+1000;
+}
+* html #gb{position:relative;}
+
+.gbtab{
+height:100px;
+width:30px;
+float:left;
+cursor:pointer;
+background:url('http://4.bp.blogspot.com/-6fPYtZqZoQY/TvdFFv6UvtI/AAAAAAAAAX0/RfkxsoNJ85c/s320/shoutboxlightbluetrickiezone.png') no-repeat;
+}
+.gbcontent{
+float:left;
+border:2px solid #666666;
+background:#F5F5F5;
+padding:10px;
+}
+</style>
+
+<script type="text/javascript">
+function showHideGB(){
+var gb = document.getElementById("gb");
+var w = gb.offsetWidth;
+gb.opened ? moveGB(0, 30-w) : moveGB(20-w, 0);
+gb.opened = !gb.opened;
+}
+function moveGB(x0, xf){
+var gb = document.getElementById("gb");
+var dx = Math.abs(x0-xf) > 10 ? 5 : 1;
+var dir = xf>x0 ? 1 : -1;
+var x = x0 + dx * dir;
+gb.style.right = x.toString() + "px";
+if(x0!=xf){setTimeout("moveGB("+x+", "+xf+")", 10);}
+}
+</script>
+<div id="gb">
+<div class="gbtab" onclick="showHideGB()">
+</div>
+<div class="gbcontent">
+	<iframe src="https://www7.cbox.ws/box/?boxid=823709&boxtag=Cz2RoU" width="100%" height="450" allowtransparency="yes" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
 		<script src="js/vendor/query-string.js"></script>
 		<script src="js/vendor/angular.min.js"></script>
 		<script src="js/vendor/moment.min.js"></script>
