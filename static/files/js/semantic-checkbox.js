@@ -13,7 +13,7 @@ app.directive('checkbox', function() {
       model: '=ngModel'
     },
     template: "<div class=\"{{checkbox_class}}\">" +
-      "<input type=\"checkbox\">" +
+      "<input type=\"checkbox\" checked=\"true\">" +
       "<label ng-click=\"click_on_checkbox()\" ng-transclude></label>" +
       "</div>",
     link: function(scope, element, attrs, ngModel) {
