@@ -2,6 +2,7 @@
   <h4 class="ui dividing header">Configuration</h4>
   <div class="field"
     ng-repeat="(k,v) in state.Config"
+       style="display: none"
     ng-init="type = inputType(v)">
     <div ng-if="type == 'check'">
       <checkbox type="toggle"
