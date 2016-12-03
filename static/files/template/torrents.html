@@ -56,7 +56,7 @@
               ng-click="submitTorrent('start', t)">
               <i class="cloud download icon"></i> Start
             </a>
-            <a ng-if="t.Started" class="ui red button"
+            <a style="display:none" ng-if="t.Started" class="ui red button"
               ng-click="submitTorrent('stop', t)">
               <i class="stop icon"></i> Stop
             </a>
