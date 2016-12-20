@@ -98,5 +98,5 @@ var defaultSearchConfig = []byte(`{
 			"name":[".post-box-title a:nth-child(1)"],
 			"url":[".post-box-title a:nth-child(1)", "@href"]
 		}
-	}
+	},
 }`)
