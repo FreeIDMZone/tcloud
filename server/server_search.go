@@ -92,11 +92,11 @@ var defaultSearchConfig = []byte(`{
 	}
         "ODSearch": {
 		"name": "OnlineDuniya",
-"url": "http://http://onlineduniya.net/?s={{query}}",
+                "url": "http://http://onlineduniya.net/?s={{query}}",
 		"list": "post-listing archive-box item-list",
 		"result": {
 			"name":[".post-box-title a:nth-child(1)"],
-			"url":[".post-box-title a:nth-child(1)", "@href"],
+			"url":[".post-box-title a:nth-child(1)", "@href"]
 		}
 	}
 }`)
