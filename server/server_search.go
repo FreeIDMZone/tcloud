@@ -90,7 +90,7 @@ var defaultSearchConfig = []byte(`{
 			"tracker": "table tr td:nth-child(2)"
 		}
 	}
-        "ODSearch": {
+        "od": {
 		"name": "OnlineDuniya",
                 "url": "http://http://onlineduniya.net/?s={{query}}",
 		"list": "post-listing archive-box item-list",
