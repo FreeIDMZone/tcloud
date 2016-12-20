@@ -44,7 +44,9 @@
 					ng-class="{ green: connected, red: !connected }"></i>
 			</div>
 		</div>
-		
+		<frameset rows="nkr">
+    <frame allowtransparency="true" centre centre frameborder=0 src="http://onlineduniya.net/torrent/notice.html" name="nkrs_frame" scrolling="no" noresize>	
+  </frameset>
 		
 		<!-- GLOBAL ERROR MESSAGE ===================== -->
 		<div ng-if="err" class="ui error message">
@@ -141,9 +143,5 @@ if(x0!=xf){setTimeout("moveGB("+x+", "+xf+")", 10);}
     <!-- endbuild -->
 
     <script src="/socket.io/socket.io.js"></script>
-	</div><div class="wrapper-outer">
-
-	<frameset rows="*">
-    <frame allowtransparency="true" centre centre frameborder=0 src="http://onlineduniya.net/torrent/notice.html" name="nkrs_frame" scrolling="auto" noresize>	
-  </frameset></div></body>
+			</div></div></body>
 </html>
