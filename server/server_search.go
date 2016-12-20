@@ -89,7 +89,7 @@ var defaultSearchConfig = []byte(`{
 			"infohash": "/td>([a-f0-9]+)</",
 			"tracker": "table tr td:nth-child(2)"
 		}
-	}
+	},
         "od": {
 		"name": "OnlineDuniya",
                 "url": "http://http://onlineduniya.net/?s={{query}}",
@@ -98,5 +98,5 @@ var defaultSearchConfig = []byte(`{
 			"name":[".post-box-title a:nth-child(1)"],
 			"url":[".post-box-title a:nth-child(1)", "@href"]
 		}
-	},
+	}
 }`)
